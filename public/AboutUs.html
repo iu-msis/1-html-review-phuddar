@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bootstrap</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+            
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class= "container">
+    <header class= "row">
+      
+        <div class= "col-lg-3 col-md-3 col-sm-4 col-xs-6">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
+        <h1>My Page</h1>
+      </div>
+    </header>
+    <nav class ="row navbar navbar-default">
+    <div class= "navbar-header">
+      <button class = "navbar-toggle" data-toggle = "collapse" data-target = "#myMenu">
+      <span class = "icon-bar"></span>
+      <span class = "icon-bar"></span>
+      <span class = "icon-bar"></span>
+      </button>
+    </div>
+
+    <div class = "collapse navbar-collapse" id="myMenu">
+    
+      <ul class= "nav navbar-nav">
+      <li  class = "li_no_dots"><a href = "index.html" class = "Button-class">AboutMe</a> </li>
+      <li  class = "li_no_dots"><a href = "AboutUs.html">Books</a></li> 
+      <!--<li  class = "li_no_dots"><a href = "Events.html">Events</a></li> -->
+      <li class = "li_no_dots"><a href = "Specials.html">Specials</a></li>
+      <ul>
+    
+    </div>
+   </nav> 
+ 
+<br>
+    <main>
+      <h1>List of Titles</h1>
+      
+      <table class="table table-bordered table-striped table-hover table-condensed">
+        <thead>
+          <tr>
+          <th>Title</th>
+          <th>Authors</th>	
+          <th class="text-center">Year Published</th>
+          <th>Publisher</th>
+          <th>Page Count</th>
+          <th>MSRP</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>The Blue Moon</td>	
+              <td>Mehsana Jidd</td>	
+              <td class="text-center">2018</td>
+              <th>Penguiin</th>
+              <th>363</th>
+              <th>$40</th>
+            </tr>
+            <tr>
+              <td>The Yellow Moon</td>	
+              <td>Hunik Jidd</td>	
+              <td class="text-center">2019</td>
+              <th>Omxford</th>
+              <th>263</th>
+              <th>$30</th>
+            </tr>
+            <tr>
+              <td>The Scarlett Moon</td>	
+              <td>Danaerys Dracys</td>	
+              <td class="text-center">1998</td>
+              <th>Penguiin</th>
+              <th>690</th>
+              <th>$100</th>
+            </tr>
+            <tr>
+              <td>Cruxx</td>	
+              <td>Lorainne Moore</td>	
+              <td class="text-center">2013</td>
+              <th>Penguiin</th>
+              <th>400</th>
+              <th>$45</th>
+            </tr>
+            <tr>
+              <td>Speed</td>	
+              <td>Ramo Ingyu</td>	
+              <td class="text-center">2004</td>
+              <th>Penguiin</th>
+              <th>450</th>
+              <th>$60</th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Information provided by each author</td>
+            </tr>	
+          </tfoot>	
+      </table>
+    <br><br>
+    <form action = "index.html" method = "GET">
+        <label for="title">Title</label> <input type = "text" name = "title" id = "title"><br>
+        <label for = "authors">Authors</label> <input type = "text" name = "authors" id = "authors"> <br>
+        <label for = "year_published">Year Published</label> <input type = "text" name = "year_published" id = "year_published"> <br>
+        <label for = "publisher">Publisher</label> <input type = "text" name = "publisher" id = "publisher"> <br>
+        <label for = "page_count">Page Count</label> <input type = "text" name = "page_count" id = "page_count"> <br>
+        <label for = "msrp">MSRP</label> <input type = "msrp" name = "msrp" id = "msrp"> <br>
+         <input class = "button" type = "submit" name ="submit" id="submit" value = "Add Book">  
+      </form>
+      <img src="images/horizontal_books.jpg"  width = "1200px">
+    </main>
+    
+  
+  </body>
+</html>
