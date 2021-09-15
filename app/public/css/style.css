@@ -75,6 +75,10 @@ input{
   color: red;
 }
 
+#flashgreen{
+  color: green;
+}
+
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
