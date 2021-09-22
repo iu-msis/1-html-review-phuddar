@@ -55,6 +55,9 @@
       <p> Here you will get to know me!
 
 <!-- trying out vue.js -->
+      <form v-on:submit.prevent="fetchUserData">
+          <button type="submit">Refresh</button>
+      </form>
       <p>My name is {{person.name.first}} {{person.name.last}}</p>
       <p> I am from {{person.location.country}}</p>
       <!-- <p>My Date of Birth is {{person.dob.date[0]}}{{person.dob.date[1]}}{{person.dob.date[2]}}{{person.dob.date[3]}}{{person.dob.date[4]}}{{person.dob.date[5]}}{{person.dob.date[6]}}{{person.dob.date[7]}}{{person.dob.date[8]}}{{person.dob.date[9]}}<p> -->
