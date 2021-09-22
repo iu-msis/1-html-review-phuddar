@@ -4,23 +4,31 @@ const SomeApp = {
         "person": {},
         }
     },
+    computed: {
+        prettyBirthday() {
+            return dayjs(this.person.dob.date)
+            .format('D MMM YYYY')
+        }
+    },
+    methods: {
+        fetchUserData() {
+            console.log("A");
+            fetch('https://randomuser.me/api/')
+            .then( response => response.json() )
+            .then( (responseJson) => {
+                console.log(responseJson);
+                console.log("C");
+                this.person = responseJson.results[0];
+            })
+            .catch( (err) => {
+                console.error(err);
+            })
+            console.log("B");
+        }
+    },
     created() {
-        console.log("A");
-
-        fetch('https://randomuser.me/api/')
-        .then(response => response.json())
-        .then((parsedJson) => {
-            console.log(parsedJson);
-            this.person = parsedJson.results[0]
-            console.log("C");
-        })
-        .catch( err => {
-            console.error(err)
-        })
-
-        console.log("B");
-    }
+        this.fetchUserData();
+    } //end created
   }
 
 Vue.createApp(SomeApp).mount('#someApp');
-Vue.createApp(SomeApp).mount('#someApp2');
